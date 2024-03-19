@@ -1,0 +1,161 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../src/Restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#content {
+    position: relative;
+    z-index: 1; /* Ensure content appears above background */
+    padding: 80px 20px 20px; /* Add top padding equal to navigation bar height */
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+}
+
+.full-screen-bg {
+    display: none; /* Hide the background image added in JavaScript */
+}
+
+nav {
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    
+}
+
+nav {
+    height: 60px; /* Increase height for better visibility */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    position: fixed; /* Fixed position to stick at the top */
+    width: 100%; /* Take full width of the viewport */
+    z-index: 2; /* Ensure it appears above other content */
+}
+
+/* Navigation bar buttons */
+nav button {
+    background-color: transparent; /* Transparent background */
+    border: none; /* Remove border */
+    cursor: pointer; /* Show pointer cursor on hover */
+    padding: 10px 20px; /* Add padding for better touch targets */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    color: #333; /* Dark text color */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transition effect */
+}
+
+/* Navigation bar button hover effect */
+nav button:hover {
+    color: #fff; /* Change text color to white on hover */
+    background-color: #c0392b; /* Change background color on hover */
+}
+
+/* Active button style */
+nav button.active {
+    color: #fff; /* White text color for active button */
+    background-color: #e74c3c; /* Red background color for active button */
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    width: auto; /* Adjust width for checkbox */
+    margin-bottom: 0; /* Remove margin bottom for checkbox */
+}
+
+input[type="submit"] {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #a93226;
+}
+
+svg {
+    max-width: 100%; /* Ensure the SVG logo doesn't exceed the width of the content */
+    max-height: calc(100vh - 200px); /* Adjust the height to fit the viewport minus any other elements (e.g., nav) and the combined heights of the h1 and p elements */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Styles for menu container */
+.menu-container {
+    display: flex;
+    gap: 20px; /* Add gap between menu cards */
+    justify-content: space-around; /* Center-align menu cards horizontally */
+    padding: 20px; /* Add padding to the menu container */
+}
+
+/* Styles for menu cards */
+.menu-card {
+    flex: 0 0 auto; /* Prevent menu cards from growing */
+    width: 250px; /* Set fixed width for menu cards */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition effects */
+}
+
+.menu-card:hover {
+    transform: translateY(-5px); /* Apply slight translateY transformation on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Styles for menu card elements */
+.menu-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu-card h2,
+.menu-card p {
+    margin: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-details {
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons span {
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+/* Add font-awesome CDN link in your HTML file to use font-awesome icons */
+
